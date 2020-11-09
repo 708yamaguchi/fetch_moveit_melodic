@@ -1,6 +1,6 @@
 fetch\_moveit\_melodic
 ======================
-The purpose of this package is to use `fetch_gazebo` with `MoveIt!` in ROS melodic.
+The purpose of this package is to use source version `MoveIt!` with `fetch_gazebo` in ROS melodic.
 
 ## Install
 ```bash
@@ -13,7 +13,7 @@ wstool update -t .
 rosdep install --from-paths . --ignore-src -y -r
 source /opt/ros/melodic/setup.bash
 cd ../
-catkin build
+catkin build moveit_ros fetcheus
 source ~/fetch_moveit_ws/devel/setup.bash
 ```
 
