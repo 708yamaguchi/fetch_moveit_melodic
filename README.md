@@ -13,11 +13,17 @@ wstool update -t .
 rosdep install --from-paths . --ignore-src -y -r
 source /opt/ros/melodic/setup.bash
 cd ../
-catkin build moveit_ros fetcheus
+catkin build fetch_moveit_melodic
 source ~/fetch_moveit_ws/devel/setup.bash
 ```
 
-## Use fetch\_gazebo with MoveIt!
+## Use MoveIt! with fetch\_gazebo
+```bash
+source /opt/ros/melodic/setup.bash
+source ~/fetch_moveit_ws/devel/setup.bash
+roslaunch fetch_moveit_ws start.launch
+```
+Or individual execution like below:
 ```bash
 source /opt/ros/melodic/setup.bash
 source ~/fetch_moveit_ws/devel/setup.bash
