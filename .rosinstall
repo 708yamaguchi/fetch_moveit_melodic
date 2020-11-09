@@ -1,0 +1,8 @@
+- git:
+    local-name: ros-planning/moveit
+    uri: https://github.com/ros-planning/moveit.git
+    version: melodic-devel
+- git:
+    local-name: jsk-ros-pkg/jsk_robot
+    uri: https://github.com/knorth55/jsk_robot.git
+    version: fetch15
